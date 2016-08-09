@@ -48,7 +48,7 @@ public class Cylinder extends Circle {
 	public void printVolume() {
 		System.out.println(getVolume());
 	}
-
+// Overriding the getArea method so that you can correctly calculate area for a cylinder
 	@Override
 	public double getArea() {
 		return ((2 * Math.PI * getRadius() * getHeight()) + 2 * Math.PI * getRadius() * getRadius());

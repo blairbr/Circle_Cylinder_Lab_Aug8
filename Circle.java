@@ -4,19 +4,22 @@ public class Circle {
 	private double radius;
 	private String color;
 
-	// CONSTRUCTOR
+	// CONSTRUCTORS
+	// Constructor #1
 	public Circle(double radius, String color) {
 		setRadius(radius);
 		setColor(color);
 	}
 
-	public Circle() {
-		setRadius(1.0);
-		setColor("red");
-	}
-	
+	// Constructor #2
 	public Circle(double radius) {
 		setRadius(radius);
+		setColor("red");
+	}
+
+	// Constructor #3
+	public Circle() {
+		setRadius(1.0);
 		setColor("red");
 	}
 
@@ -37,16 +40,15 @@ public class Circle {
 	public void setColor(String color) {
 		this.color = color;
 	}
-	// METHOD
-	//GET AREA
+
+	// METHOD GET AREA
 	public double getArea() {
 		double area = ((radius * radius) * Math.PI);
 		return area;
 	}
-	//Method 
+
+	// Method
 	public void printArea() {
 		System.out.println(getArea());
 	}
-		
-	}
-	
+}
